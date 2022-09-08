@@ -4,6 +4,7 @@ import { getActiveClass } from "./endpoints/getActiveClass";
 import { getAllTeachers } from "./endpoints/getAllTeachers";
 import { getStudentByName } from "./endpoints/getStudentByName";
 import { postClass } from "./endpoints/postClass";
+import { postHobby } from "./endpoints/postHobby";
 import { postStudent } from "./endpoints/postStudent";
 import { postTeacher } from "./endpoints/postTeacher";
 import { putClassModule } from "./endpoints/putClassModule";
@@ -18,7 +19,7 @@ app.post("/class", postClass);
 app.get("/class", getActiveClass);
 app.put("/class", putClassModule);
 
-//Student
+//Student  
 app.post("/student", postStudent);
 app.get("/student/:name", getStudentByName);
 app.put("/student", putStudentClass);
@@ -27,3 +28,9 @@ app.put("/student", putStudentClass);
 app.post("/teacher", postTeacher);
 app.get("/teacher", getAllTeachers);
 app.put("/teacher", putTeacherClass);
+
+//Hobby
+app.post("/hobby", postHobby);
+
+//Expertise
+// app.post("/expertise", postExpertise);
