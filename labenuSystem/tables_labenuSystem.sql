@@ -33,7 +33,7 @@ CREATE TABLE student_hobby (
 );
 
 CREATE TABLE teacher(
-	id INT PRIMARY KEY AUTO_INCREMENT,
+	teacher_id INT PRIMARY KEY,
     teacher_name VARCHAR(67) NOT NULL,
     teacher_email VARCHAR(67) UNIQUE,
     birth_date DATE NOT NULL, 
@@ -47,14 +47,26 @@ CREATE TABLE expertise (
     id INT PRIMARY KEY AUTO_INCREMENT,
     expertise_name VARCHAR(255) NOT NULL
 );
-DROP TABLE hobby;
-DROP TABLE student_hobby;
+
+INSERT INTO expertise(expertise_name)
+values ("JS"); 
+INSERT INTO expertise(expertise_name)
+values ("CSS");
+INSERT INTO expertise(expertise_name)
+values ("React");
+INSERT INTO expertise(expertise_name)
+values ("Typescript");
+INSERT INTO expertise(expertise_name)
+values ("POO (Programação Orientada a Objetos)");
+
+SELECT * FROM expertise;
 
 CREATE TABLE teacher_expertise (
     id INT PRIMARY KEY AUTO_INCREMENT,
     teacher_id  INT NOT NULL,
     expertise_id INT NOT NULL,
-    FOREIGN KEY (teacher_id) REFERENCES teacher(id),
+    FOREIGN KEY (teacher_id) REFERENCES teacher(teacher_id),
     FOREIGN KEY (expertise_id) REFERENCES expertise(id)
 );
-	
+
+SELECT * FROM teacher_expertise;

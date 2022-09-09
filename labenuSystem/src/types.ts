@@ -15,12 +15,12 @@ export type student = {
 
 export type hobby = {
     id: number,
-    student_name: string
+    hobby_name: string
 }
 
 export type expertise = {
     id: number,
-    teacher_name: string
+    expertise_name: string
 }
 
 export type teacherExpertise = {
