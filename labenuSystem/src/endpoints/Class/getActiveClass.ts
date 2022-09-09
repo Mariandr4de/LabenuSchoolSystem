@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { selectActiveClasses } from "../data/selectActiveClasses";
+import { selectActiveClasses } from "../../data/ClassData/selectActiveClasses";
 
 export const getActiveClass = async(req: Request, res: Response) => {
     try {

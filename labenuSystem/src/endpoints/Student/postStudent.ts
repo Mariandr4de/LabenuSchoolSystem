@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
-import { createStudent } from "../data/createStudent";
-import { connection } from "../data/dataBase";
+import { connection } from "../../data/dataBase";
+import { createStudent } from "../../data/StudentData/createStudent";
 
 export const postStudent = async (req: Request, res: Response) => {
   try {

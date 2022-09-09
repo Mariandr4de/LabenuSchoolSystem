@@ -1,4 +1,4 @@
-import { connection } from "./dataBase";
+import { connection } from "../dataBase";
 
 export const createStudent = async (
   student_name: string,

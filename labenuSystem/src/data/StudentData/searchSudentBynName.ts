@@ -1,4 +1,4 @@
-import { connection } from "./dataBase";
+import { connection } from "../dataBase";
 
 export const searchStudentByName = async (
   student_name: string

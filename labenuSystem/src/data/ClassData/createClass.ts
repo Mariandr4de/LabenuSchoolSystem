@@ -1,5 +1,5 @@
-import { connection } from "./dataBase";
-import { classes } from "../types";
+import { connection } from "../dataBase";
+import { classes } from "../../types";
 
 
 export const createClass = async (class_name:string, module: number): Promise<any> => {

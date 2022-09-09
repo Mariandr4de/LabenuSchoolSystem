@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { updateStudentClass } from "../data/updateStudentClass";
+import { updateStudentClass } from "../../data/StudentData/updateStudentClass";
 
 export const putStudentClass = async (req: Request, res: Response) => {
   try {
