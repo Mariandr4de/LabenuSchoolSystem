@@ -1,33 +1,44 @@
-## LabenuSystem:
+<h2 align="center"> API Labenu System </h2>
 
-Você estuda na Labenu_ há tanto tempo que já parecem anos, não é? Então, hoje, vamos pedir para criar um sistema que represente o básico da nossa organização. 
+<h4 align="center"> This API emulates the labenu school system, with correlations of students, their hobbies, classes, teachers and their expertises. </h4>
 
-Ele deve possuir, ao menos, as 3 entidades importantes:
+### Working:
 
-1. Estudantes 
+- **Classes**
+  - Get Active Classes
+  - Get Users by Class
+  - Post Create Class
+  - Put Change Module
+  
+- **Students**
+  - Get Search Student by Name
+  - Get Search Student by Hobby
+  - Post Creat Student 
+  - Post Create Hobby
+  - Post Studant Hobby 
+  - Put Change Student Class
+    
+- **Teachers**
+  - Get All Teachers 
+  - Get Teacher by Expertise Name
+  - Post Create Teacher
+  - Put Change Teacher Class
 
-    Representa estudantes da nossa instituição. Eles devem possuir: id, nome, email, data de nascimento e os principais hobbies dele. 
+### Link Postman
+https://documenter.getpostman.com/view/21551971/VVJ6xE4p
 
-2. Docente
+<h2 align="center"> 
 
-    Representa docentes da nossa instituição. Eles devem possuir: id, nome, email, data de nascimento e todas as especialidades dele. Há 7 especialidades: React, Redux, CSS, Testes, Typescript, Programação Orientada a Objetos e Backend
+ 👩🏻‍💻Desenvolvedoras: 
 
-3. Turma
-
-    Toda turma é composta das seguintes características: id, nome, data de início, data de término, lista de professores responsáveis, uma lista de alunos e módulo atual em que a turma está.
-
-    O módulo pode assumir os valores de 1 a 7 ou `undefined`, indicando que as aulas dessa turma ainda não começaram. Para esse exercício, vamos considerar que existam dois tipos de turma: integral ou noturna. Há uma restrição para o nome das turmas noturnas: tem que terminar com `-na-night`.
-
-As funcionalidades básicas são:
-
-→ Criar estudante;
-
-→ Criar docente;
-
-→ Criar turma;
-
-→ Adicionar estudante na turma;
-
-→ Adicionar docente na turma;
-
-→ Pegar a idade de algum estudante a partir do id
+</h2>
+<table align="center">
+  <tr>
+  <td align="center"><a href="https://github.com/JilMayumiMoutinho"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/104766367?v=4" width="100px;" alt=""/><br /><sub><b>Jil Mayumi Moutinho</b></sub></a>
+  <br />
+    </td> <td align="center"><a href="https://github.com/Mariandr4de"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/104591781?v=4" width="100px;" alt=""/><br /><sub><b>Mariana Andrade</b></sub></a>
+    <br />
+    </td> <td align="center"><a href="https://github.com/TalitaMiguel"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/62106501?v=4" width="100px;" alt=""/><br /><sub><b>Talita Leonardo Miguel</b></sub></a><br />
+    </td> 
+  </tr>
+</table>
