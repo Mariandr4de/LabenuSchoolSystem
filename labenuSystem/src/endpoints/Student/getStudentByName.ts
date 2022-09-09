@@ -1,5 +1,5 @@
-import { Request, Response } from "express"
-import { searchStudentByName } from "../data/searchSudentBynName"
+import { Request, Response } from "express";
+import { searchStudentByName } from "../../data/StudentData/searchSudentBynName";
 
 export const getStudentByName = async(req: Request, res: Response) => {
     try {

@@ -1,4 +1,4 @@
-import { connection } from "./dataBase";
+import { connection } from "../dataBase";
 
 export const updateClassModule = async(id: number, module: number ): Promise<any> => {
     await connection("classes")

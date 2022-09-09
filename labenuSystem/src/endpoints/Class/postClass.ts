@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { createClass } from "../data/createClass";
+import { createClass } from "../../data/ClassData/createClass";
 
 export const postClass = async (req: Request, res: Response) => {
     try {

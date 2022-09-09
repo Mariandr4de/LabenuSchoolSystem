@@ -1,4 +1,4 @@
-import { connection } from "./dataBase";
+import { connection } from "../dataBase";
 
 export const selectActiveClasses = async (): Promise<any> => {
 const result = await connection()

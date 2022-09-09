@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { createHobby } from "../data/createHobby";
+import { createHobby } from "../../data/StudentData/createHobby";
 
 export const postHobby = async (req: Request, res: Response) => {
   try {
