@@ -3,14 +3,9 @@ import { searchStudentByHobby } from "../../data/StudentData/searchStudentByHobb
 
 export const getStudentByHobby = async (req: Request, res: Response) => {
   try {
-    const hobby_id = req.params.hobby_id;
+    const hobby_name = req.params.hobby_name;
 
-    if (isNaN(Number(hobby_id))) {
-      res.statusCode = 400;
-      throw new Error("Inform the hobby id like number");
-    }
-
-    const studentByHobby = await searchStudentByHobby(Number(hobby_id));
+    const studentByHobby = await searchStudentByHobby(hobby_name);
 
     if (!studentByHobby.length) {
       res.statusCode = 404;

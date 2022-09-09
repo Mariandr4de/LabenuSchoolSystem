@@ -11,7 +11,7 @@ export const postTeacher = async (req: Request, res: Response) => {
       teacher_email,
       birth_date,
       class_id,
-      expertise_id,
+      expertise_name
     } = req.body;
 
     if (
@@ -19,8 +19,7 @@ export const postTeacher = async (req: Request, res: Response) => {
       !teacher_name ||
       !teacher_email ||
       !birth_date ||
-      !class_id ||
-      !expertise_id
+      !class_id
     ) {
       res.statusCode = 400;
       throw new Error("Inform all Data");
@@ -42,7 +41,7 @@ export const postTeacher = async (req: Request, res: Response) => {
       birth_date,
       class_id
     );
-    await createTeacherExpertise(teacher_id, expertise_id);
+    await createTeacherExpertise(teacher_name, expertise_name);
 
     res.status(201).send({ message: "teacher created successfully" });
   } catch (error: any) {

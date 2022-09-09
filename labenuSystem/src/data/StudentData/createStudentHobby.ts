@@ -1,11 +1,11 @@
 import { connection } from "../dataBase";
 
 export const createStudentHobby = async (
-  hobby_id: number,
-  student_id: number
+  hobby_name: string,
+  student_name: string
 ): Promise<any> => {
   await connection("student_hobby").insert({
-    hobby_id,
-    student_id,
+    hobby_name,
+    student_name,
   });
 };
