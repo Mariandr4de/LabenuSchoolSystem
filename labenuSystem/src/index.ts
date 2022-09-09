@@ -4,7 +4,7 @@ import { getActiveClass } from "./endpoints/Class/getActiveClass";
 import { getAllTeachers } from "./endpoints/Teacher/getAllTeachers";
 import { getStudentByHobby } from "./endpoints/Student/getStudentByHobby";
 import { getStudentByName } from "./endpoints/Student/getStudentByName";
-import { getTeacherbyExpertise } from "./endpoints/Teacher/getTeacherBuExpertise";
+import { getTeacherbyExpertise } from "./endpoints/Teacher/getTeacherByExpertise";
 import { getUsersByClass } from "./endpoints/Users/getUsersSameClass";
 import { postClass } from "./endpoints/Class/postClass";
 import { postHobby } from "./endpoints/Student/postHobby";
@@ -41,7 +41,7 @@ app.get("/users/:class_id", getUsersByClass);
 
 //Challenge - Student with the same hobby
 app.post("/studentHobby", postStudentHobby);
-app.get("/studentHobby/:hobby_id", getStudentByHobby);
+app.get("/studentHobby/:hobby_name", getStudentByHobby);
 
 //Challenge - Student with the same hobby
-app.get("/teacher/:expertise_id", getTeacherbyExpertise);
+app.get("/teacher/:expertise_name", getTeacherbyExpertise);

@@ -3,16 +3,9 @@ import { searchTeacherByExpertise } from "../../data/TeacherData/searchTeacherby
 
 export const getTeacherbyExpertise = async (req: Request, res: Response) => {
   try {
-    const expertise_id = req.params.expertise_id;
+    const expertise_name = req.params.expertise_name;
 
-    if (isNaN(Number(expertise_id))) {
-      res.statusCode = 422;
-      throw new Error("Inform the hobby id like number");
-    }
-
-    const TeacherbyExpertise = await searchTeacherByExpertise(
-      Number(expertise_id)
-    );
+    const TeacherbyExpertise = await searchTeacherByExpertise(expertise_name);
 
     if (!TeacherbyExpertise.length) {
       res.statusCode = 404;
