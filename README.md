@@ -1,4 +1,4 @@
-<h2 align="center"> API Labenu System </h2>
+<h2 align="center"> BackEnd - Labenu System API </h2>
 
 <h4 align="center"> This API emulates the labenu school system, with correlations of students, their hobbies, classes, teachers and their expertises. </h4>
 
@@ -26,6 +26,17 @@
 
 ### Link Postman
 https://documenter.getpostman.com/view/21551971/VVJ6xE4p
+
+
+### Tecnologies
+- Typescript
+- Node
+- SQL
+- MySQL
+- Express
+- Cors
+- Knex
+- Heroku
 
 <h2 align="center"> 
 
