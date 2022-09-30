@@ -40,7 +40,7 @@ https://documenter.getpostman.com/view/21551971/VVJ6xE4p
 
 <h2 align="center"> 
 
- 👩🏻‍💻Desenvolvedoras: 
+ 👩🏻‍💻Desenvolvedoras 
 
 </h2>
 <table align="center">
