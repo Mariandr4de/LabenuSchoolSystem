@@ -2,7 +2,7 @@
 
 <h4 align="center"> This API emulates the labenu school system, with correlations of students, their hobbies, classes, teachers and their expertises. </h4>
 
-### Working:
+## ✔️Working:
 
 - **Classes**
   - Get Active Classes
@@ -24,11 +24,11 @@
   - Post Create Teacher
   - Put Change Teacher Class
 
-### Link Postman
-https://documenter.getpostman.com/view/21551971/VVJ6xE4p
+## 🔗Link Postman
+[documentation](https://documenter.getpostman.com/view/21551971/VVJ6xE4p)
 
 
-### Tecnologies
+### 🛠Tecnologies
 - Typescript
 - Node
 - SQL
